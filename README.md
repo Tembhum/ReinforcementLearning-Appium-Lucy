@@ -1,8 +1,8 @@
 # Lucy
-Reinforcement learning based android application testing tool, implementing with Appium which extracts android GUI components and choosing actions based on the QTable.
+Reinforcement learning based android application testing tool, implementing with Appium which extracts android GUI components and choosing actions based on the QTable. The environment were built using OpenAI Gym.
 
 # Owner/Author
-Tembhum Chaiwattanayon https://github.com/Tembhum 
+Hope Chaiwattanayon https://github.com/Tembhum 
 
 Nont Oudomying https://github.com/nontnont01
 
@@ -14,6 +14,7 @@ Nont Oudomying https://github.com/nontnont01
     *The custom env is the reinforcement learning environement cloned from this repo
 3.  Install the appium desktop
 4. Install the android studio and the android emulator in case you don't have an android device
+5. edit the .env file according to your apk (http://www.automationtestinghub.com/apppackage-and-appactivity-name/)
     
 # Parts
 1. Environment
@@ -39,7 +40,7 @@ Nont Oudomying https://github.com/nontnont01
 
     OVERVIEW: The agent used to store Q Table, choose action to be performed, and walk through the environment.
     
-    DIRECTORY FOR AGENT : senior/custom_gym/z/agent
+    DIRECTORY FOR AGENT : agent.py
 
     CONFIG FOR AGENT
     - observation_space = no. of possible states (in our case, we started from 1 and increment after a new state is found)
@@ -60,7 +61,7 @@ Nont Oudomying https://github.com/nontnont01
 
     OVERVIEW: q table
     
-    DIRECTORY FOR Q TABLE : senior/custom_gym/z/QTable
+    DIRECTORY FOR Q TABLE : QTable.py
 
     CONFIG for Q TABLE:
     -  same as Agent
@@ -83,7 +84,7 @@ Nont Oudomying https://github.com/nontnont01
 
     OVERVIEW: a medium between environment and agent, control episodes 
     
-    DIRECTORY FOR MONITOR : senior/custom_gym/z/monitor
+    DIRECTORY FOR MONITOR : monitor.py
 
     CONFIG FOR MONITOR:
     - appName = 'duolingoShow' => name used in the prefix for saving QTable in csv
@@ -97,7 +98,7 @@ Nont Oudomying https://github.com/nontnont01
 
     OVERVIEW: run the code
     
-    DIRECTORY FOR MAIN : senior/custom_gym/z/main
+    DIRECTORY FOR MAIN : main.py
 
 
 # How to run
