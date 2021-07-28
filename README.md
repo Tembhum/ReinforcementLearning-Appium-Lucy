@@ -1,7 +1,7 @@
 # Lucy
 Reinforcement learning based android application testing tool, implementing with Appium which extracts android GUI components and choosing actions based on the QTable.
 
-#Owner/Author
+# Owner/Author
 Tembhum Chaiwattanayon https://github.com/Tembhum 
 Nont Oudomying https://github.com/nontnont01
 
