@@ -12,23 +12,29 @@ Nont Oudomying https://github.com/nontnont01
 2.  Setup the environment according to the link belowed
     https://medium.com/@apoddar573/making-your-own-custom-environment-in-gym-c3b65ff8cdaa
     *The custom env is the reinforcement learning environement cloned from this repo
-3.  Install the appium desktop
+3. Install Java development kit
 4. Install the android studio and the android emulator in case you don't have an android device
-5. edit the .env file according to your apk (http://www.automationtestinghub.com/apppackage-and-appactivity-name/)
+5. Install Appium
+6. edit the .env file according to your apk (http://www.automationtestinghub.com/apppackage-and-appactivity-name/)
     
 # Parts
 1. Environment
 
     OVERVIEW : The appium environment which performed actions available on the connected device.
     
-    DIRECTORY FOR ENVIRONMENT : senior/custom_gym/envs/custom_env_dir/custom_env.py
+    DIRECTORY FOR ENVIRONMENT : lucy-rl-appium/custom_gym/envs/custom_env_dir/
 
     CONFIG FOR ENVIRONMENT: 
-    - Application Path => app_path_string = '../senior/apps/duolingo.apk'
-    - Landing Page => wait_activity = 'com.duolingo.app.LoginActivity'
-    - Package Name => appPackage = 'com.duolingo'
-    - DeviceName => deviceName = "emulator-5554"
-
+        Can be changed in the 'lucy-rl-appium/.env' file
+        
+        deviceName = "emulator-5554"
+        appPackage = 'com.duolingo'
+        wait_activity = 'com.duolingo.app.LoginActivity'
+        app_path_string = 'apps/duolingo.apk'
+        automationName = "UiAutomator2"
+        version = '8.1.0'
+        platformName = 'Android'
+        
     METHODS :
     - init : initialize the environment (open the application configured in app path on the connected device and get the available      actions on the home page)
     - reset : reset the environment at the beginning of a new episode (reset the parameters)
@@ -98,7 +104,7 @@ Nont Oudomying https://github.com/nontnont01
 
     OVERVIEW: run the code
     
-    DIRECTORY FOR MAIN : main.py
+    DIRECTORY FOR MAIN :lucy-rl-appium/main.py
 
 
 # How to run
