@@ -1,6 +1,10 @@
 # Lucy
 Reinforcement learning based android application testing tool, implementing with Appium which extracts android GUI components and choosing actions based on the QTable.
 
+#Owner/Author
+Tembhum Chaiwattanayon https://github.com/Tembhum 
+Nont Oudomying https://github.com/nontnont01
+
 # Installation
 1.  Install the virtalenv and all the required packages/libraries on requirement.txt by using the command pip install -r
     requirements.txt in the virtalenv directory. requirement.txt is in the z folder in the senior directory.
