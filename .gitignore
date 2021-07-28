@@ -1,0 +1,17 @@
+senior/*
+
+**/*.egg-info
+
+**/__pycache__
+**/.DS_Store
+
+apps/*
+!apps/duolingo.apk
+!apps/khunlook.apk
+
+result/Episode/*
+result/QValue/*
+result/Statelist/*
+!result/Episode/Episode.csv
+!result/QValue/duolingoShowQValue.csv
+!result/Statelist/duolingoShowStateList.csv
