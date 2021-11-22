@@ -106,8 +106,10 @@ def interact(env, agent, num_episodes=30, window=1):
         
             # agent selects an action
             action = agent.select_action(y)
-
+            print(action)
             # agent performs the selected action
+            #observation, reward, done, info = env.step(action)
+            
             next_state, reward,done, indices, stateENV, action_count = env.step(action)
             time.sleep(0.3)
             
